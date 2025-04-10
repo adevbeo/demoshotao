@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone Store</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            margin: 40px 0;
+        }
+
+        .faq-section h2 {
+            color: #1a1a1a;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .faq-item {
+            background-color: white;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .faq-item h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        /* Product Section */
+        .product-section {
+            margin: 40px 0;
+        }
+
+        .product-section h2 {
+            color: #1a1a1a;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: 200px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+
+        .product-card h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            color: #e74c3c;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .specs {
+            font-size: 0.9rem;
+            color: #666;
+            margin: 10px 0;
+        }
+
+        .buy-btn {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .buy-btn:hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .product-grid {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>iPhone Store</h1>
+        <p>Khám phá dòng iPhone mới nhất 2025</p>
+    </header>
+
+    <div class="container">
+        
+
+        <!-- Product Section -->
+        <section class="product-section">
+            <h2>Danh Sách Sản Phẩm</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.32Q9UDoeuBYUSy5ozoJsbwHaJC&pid=Api" alt="iPhone 16 Pro Max">
+                    <h3>iPhone 16 Pro Max</h3>
+                    <p class="price">1.449.000.000 VNĐ</p>
+                    <p class="specs">Pin: 18h | Màn hình: 6.9" | iOS 18 | Camera: 48MP | 256GB | 240g</p>
+                    <button class="buy-btn">Mua Ngay</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.kiGkC1mRT0mXLso5irnYhQHaHa&pid=Api" alt="iPhone 16 Plus">
+                    <h3>iPhone 16 Plus</h3>
+                    <p class="price">999.000.000 VNĐ</p>
+                    <p class="specs">Pin: 16h | Màn hình: 6.7" | iOS 18 | Camera: 48MP | 128GB | 225g</p>
+                    <button class="buy-btn">Mua Ngay</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.kiGkC1mRT0mXLso5irnYhQHaHa&pid=Api" alt="iPhone 16">
+                    <h3>iPhone 16</h3>
+                    <p class="price">799.000.000 VNĐ</p>
+                    <p class="specs">Pin: 12h | Màn hình: 6.1" | iOS 18 | Camera: 48MP | 128GB | 200g</p>
+                    <button class="buy-btn">Mua Ngay</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.6v1FaCqpgQTqAQFRgBLMWQHaHa&pid=Api" alt="iPhone 15 Pro Max">
+                    <h3>iPhone 15 Pro Max</h3>
+                    <p class="price">1.349.000.000 VNĐ</p>
+                    <p class="specs">Pin: 14h | Màn hình: 6.7" | iOS 17 | Camera: 48MP | 256GB | 221g</p>
+                    <button class="buy-btn">Mua Ngay</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.f8Kabd1Xq0DPIG1mlroaQwHaEK&pid=Api" alt="iPhone 15 Plus">
+                    <h3>iPhone 15 Plus</h3>
+                    <p class="price">799.000.000 VNĐ</p>
+                    <p class="specs">Pin: 14h | Màn hình: 6.7" | iOS 17 | Camera: 48MP | 128GB | 217g</p>
+                    <button class="buy-btn">Mua Ngay</button>
+                </div>
+            </div>
+        </section>
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <h2>Câu Hỏi Thường Gặp</h2>
+            <div class="faq-item">
+                <h3>Bạn đang tìm một chiếc iPhone có thể “cày game, quay vlog, làm việc cả ngày” mà không lo hết pin – bạn nghĩ chiếc nào trong dòng mới nhất làm được điều đó?</h3>
+                <p>iPhone 16 Pro Max là lựa chọn tối ưu với thời lượng pin lên đến 18 tiếng, camera 48MP và bộ nhớ lớn – lý tưởng cho cả làm việc lẫn giải trí.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Với hơn 1 tỷ đồng trong tay, bạn sẽ chọn một chiếc iPhone mạnh nhất hiện nay, hay tối ưu hiệu suất trên từng đồng bỏ ra?</h3>
+                <p>Nếu muốn trải nghiệm đỉnh cao, iPhone 16 Pro Max là số 1. Nhưng nếu bạn muốn tối ưu chi phí, iPhone 15 Pro Max hoặc 16 Plus là lựa chọn rất đáng cân nhắc.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Bạn muốn một chiếc điện thoại nhẹ tay, dễ bỏ túi mà vẫn sang xịn mịn – đã xem qua iPhone 16 chưa?</h3>
+                <p>iPhone 16 chỉ nặng 200g, màn hình 6.1 inch gọn gàng, chạy iOS 18 mới nhất – phù hợp với người thích sự tiện dụng mà vẫn cao cấp.</p>
+            </div>
+            <div class="faq-item">
+                <h3>iPhone giờ đã có bản màn hình gần 7 inch – bạn muốn trải nghiệm phim ảnh, đa nhiệm “full màn hình” đúng nghĩa chưa?</h3>
+                <p>iPhone 16 Pro Max sở hữu màn hình 6.9 inch – lớn nhất từ trước đến nay, cho trải nghiệm hình ảnh sống động như rạp chiếu phim.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Cùng là 48MP, nhưng bạn nghĩ AI xử lý ảnh trên iOS 18 khác gì so với iOS 17 không?</h3>
+                <p>iOS 18 cải tiến mạnh khả năng xử lý ảnh bằng AI, tối ưu ánh sáng, xoá phông và HDR thông minh – ảnh từ iPhone 16 rõ nét và tự nhiên hơn hẳn.</p>
+            </div>
+        </section>
+    </div>
+    <script src="https://demo.smartchat.com.vn/chatbot-embed.js?chatbotCode=1ec46659-c6fa-418f-95e6-90118e9c876e"></script>
+    <footer>
+        <p>© 2025 iPhone Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
